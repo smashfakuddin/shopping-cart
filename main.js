@@ -3,8 +3,14 @@ firstBtn.addEventListener("click", function(){
   var amount= document.getElementById("first-input").value;
   var amountNumber=parseFloat(amount);
   var total= amountNumber+1;
-
   document.getElementById("first-input").value=total;
-    
+  
+})
+const secondBtn = document.getElementById("minus-button");
+secondBtn.addEventListener("click", function(){
+  var amount= document.getElementById("first-input").value;
+  var amountNumber=parseFloat(amount);
+  var total= amountNumber-1;
+  document.getElementById("first-input").value=total;
   
 })
